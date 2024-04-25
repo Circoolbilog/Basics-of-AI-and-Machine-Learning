@@ -2,7 +2,7 @@ To EDIT!
 
 
 Artificial Intelligence (AI) and Machine Learning (ML) are two closely related fields that have revolutionized the way we live our lives. The history of AI and ML dates back to the 1940s, with the invention of electronic computers.
-
+ 
 The following is a brief account of the history of AI and ML, highlighting key milestones in their development.
 
 1.1. The Early Days of AI
