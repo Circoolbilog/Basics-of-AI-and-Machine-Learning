@@ -14,8 +14,6 @@ A few years ago, when the word AI or Artificial Intelligence were to be mentione
 ![[1 NLnnf_M4Nlm4p1GAWrWUCQ.gif]]
 
 One of the most popular branches of Artificial Intelligence right now, this is also the branch of machine learning where my current work is related. Computer vision helps computers understand digital videos and images. 
-If you have an android phone, you can open up google lens, where you can see some of the applications for computer vision. "Translate", "Text", and "Homework" are all examples of Optical Character Recognition (OCR). OCR enables computers to extract text from images to which google can then process the text depending on your needs. 
-
 
 Some examples of Computer vision:
 - Facial Recognition
@@ -23,13 +21,18 @@ Some examples of Computer vision:
 - Image Classification
 - Optical Character Recognition
 
+If you have an android phone, you can open up google lens, where you can see some of the applications for computer vision. "Translate", "Text", and "Homework" are all examples of Optical Character Recognition (OCR). OCR enables computers to extract text from images to which google can then process the text depending on your needs. The other features of the google lens use different applications of Computer Vision like Object recognition.
 
 ## Generative AI
 
-The 
+The AI Scene was disrupted with the rise of ChatGPT back in November of 2022
+
 ### Large Language Model (LLM)
+![[Pasted image 20240426160826.png]]
 
 ### Diffusion Models
+
+# A Brief History of AI
 
 
 # What is the Difference Between AI and Machine Learning?
@@ -38,3 +41,20 @@ The
 **Artificial Intelligence** - The ability of a computer or computer-controlled robot to perform tasks that are commonly associated with the intellectual processes characteristics of humans.
 **Machine Learning** - Constantly improving a machine through tweaking of parameters based on experience which imitates the way humans learn. 
 **Deep Learning** - A sub type of ML that uses Neural Networks. it uses a network of Nodes called "neurons" designed after the human brain.
+
+# Types of Machine Learning
+
+## Supervised Learning
+
+## Unsupervised Learning
+
+## Reinforcement Learning
+
+
+# Menace The Matchbox who learned to play tic-tac-toe
+
+
+# Neural networks
+
+
+# The Future of AI
