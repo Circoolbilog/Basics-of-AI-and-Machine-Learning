@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"4f3de0bb32249b1f","type":"text","text":"","x":-197,"y":214,"width":250,"height":60},
+		{"id":"ee81e8bae42083bd","type":"text","text":"Artificial Intelligence","x":-220,"y":140,"width":300,"height":240,"color":"#805100"},
+		{"id":"a32f413f4d6f80e9","type":"text","text":"Machine Learning","x":-197,"y":201,"width":250,"height":159,"color":"#856f00"},
+		{"id":"0883be8053c67422","type":"text","text":"Deep Learning","x":-180,"y":249,"width":220,"height":91,"color":"2"}
+	],
+	"edges":[]
+}

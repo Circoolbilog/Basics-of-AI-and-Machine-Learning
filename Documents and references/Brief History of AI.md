@@ -1,4 +1,4 @@
-To EDIT! 
+Source: [Dan Franklin](https://www.linkedin.com/pulse/brief-history-ai-ml-dan-franklin/)
 
 
 Artificial Intelligence (AI) and Machine Learning (ML) are two closely related fields that have revolutionized the way we live our lives. The history of AI and ML dates back to the 1940s, with the invention of electronic computers.
@@ -47,6 +47,3 @@ The history of AI and ML has been marked by significant milestones and advanceme
 
 As AI and ML continue to evolve, there are still challenges that need to be addressed, but the potential for advancements in the future is immense. It is important for society to consider the ethical implications of these technologies and to ensure that they are developed and used in a responsible and beneficial manner.
 
-  
-
-Hope you found the above interesting, insightful, and thought-provoking.
