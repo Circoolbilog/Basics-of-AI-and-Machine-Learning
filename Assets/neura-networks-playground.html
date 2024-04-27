@@ -3,148 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple TensorFlow Playground</title>
+    <title>Interactive Visualization</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
             margin: 0;
             padding: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        .top-panel {
             display: flex;
-            height: 100vh;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            padding: 10px;
+            background-color: #282828;
         }
-        canvas {
-            border: 1px solid #ccc;
-            margin-top: 20px;
-        }
-        .controls {
+
+        .center-panel {
             display: flex;
-            flex-direction: column;
-            width: 300px;
+            flex-grow: 1;
         }
-        .control {
-            margin-bottom: 10px;
+
+        .left-panel {
+            flex: 1;
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-panel {
+            flex: 1;
+            background-color: #232323;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-panel {
+            padding: 10px;
+            background-color: #282828;
+        }
+
+        button {
+            background-color: #3c3c3c;
+            color: #f0f0f0;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4c4c4c;
+        }
+
+        select, input[type="range"] {
+            background-color: #3c3c3c;
+            color: #f0f0f0;
+            border: none;
+            padding: 8px;
+            font-size: 14px;
+            margin: 4px 2px;
         }
     </style>
 </head>
 <body>
-    <h1>Simple TensorFlow Playground</h1>
-    <div class="controls">
-        <div class="control">
-            <label for="x-values">X Values:</label>
-            <input type="text" id="x-values" placeholder="Enter x values (comma-separated)">
-        </div>
-        <div class="control">
-            <label for="y-values">Y Values:</label>
-            <input type="text" id="y-values" placeholder="Enter y values (comma-separated)">
-        </div>
-        <div class="control">
-            <label for="learning-rate">Learning Rate:</label>
-            <input type="range" id="learning-rate" min="0.001" max="0.1" step="0.001" value="0.01">
-            <span id="lr-value">0.01</span>
-        </div>
-        <div class="control">
-            <label for="epochs">Epochs:</label>
-            <input type="range" id="epochs" min="10" max="1000" step="10" value="100">
-            <span id="epochs-value">100</span>
-        </div>
-        <button onclick="updatePlot()">Update Plot</button>
+    <div class="top-panel">
+        <button id="playButton">Play</button>
+        <button id="resetButton">Reset</button>
+        <button id="stepForwardButton">Step Forward</button>
+        <span id="epochCount">Epoch: 0</span>
+        <label for="dropdown1">Dropdown 1:</label>
+        <select id="dropdown1"></select>
+        <label for="dropdown2">Dropdown 2:</label>
+        <select id="dropdown2"></select>
+        <label for="dropdown3">Dropdown 3:</label>
+        <select id="dropdown3"></select>
+        <label for="dropdown4">Dropdown 4:</label>
+        <select id="dropdown4"></select>
     </div>
-    <canvas id="plot" width="400" height="400"></canvas>
+    <div class="center-panel">
+        <div class="left-panel">
+            <div>
+                <h3>Features <button id="decrementHiddenLayers">-</button> <button id="incrementHiddenLayers">+</button> <span id="hiddenLayersCount">1</span> Hidden Layers</h3>
+                <!-- Display interconnected nodes here -->
+                <svg id="nodesSvg" width="400" height="250"></svg>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h3>Output</h3>
+            <!-- Display Cartesian map here -->
+            <canvas id="cartesianMap" width="400" height="400"></canvas>
+        </div>
+    </div>
+    <div class="bottom-panel">
+        <label for="slider1">Slider 1:</label>
+        <input type="range" id="slider1" min="0" max="100" value="50">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0"></script>
+        <label for="slider2">Slider 2:</label>
+        <input type="range" id="slider2" min="0" max="100" value="50">
+
+        <label for="slider3">Slider 3:</label>
+        <input type="range" id="slider3" min="0" max="100" value="50">
+    </div>
+
     <script>
-        const canvas = document.getElementById('plot');
+        // Global variable to store values from dropdowns and sliders
+        const globalVariables = {
+            dropdown1: null,
+            dropdown2: null,
+            dropdown3: null,
+            dropdown4: null,
+            slider1: 50,
+            slider2: 50,
+            slider3: 50,
+            hiddenLayersCount: 1, // Add hiddenLayersCount to the global variables
+        };
+
+        // Update global variables when dropdown values change
+        document.getElementById('dropdown1').addEventListener('change', (event) => {
+            globalVariables.dropdown1 = event.target.value;
+        });
+
+        document.getElementById('dropdown2').addEventListener('change', (event) => {
+            globalVariables.dropdown2 = event.target.value;
+        });
+
+        document.getElementById('dropdown3').addEventListener('change', (event) => {
+            globalVariables.dropdown3 = event.target.value;
+        });
+
+        document.getElementById('dropdown4').addEventListener('change', (event) => {
+            globalVariables.dropdown4 = event.target.value;
+        });
+
+        // Update global variables when slider values change
+        document.getElementById('slider1').addEventListener('input', (event) => {
+            globalVariables.slider1 = event.target.value;
+        });
+
+        document.getElementById('slider2').addEventListener('input', (event) => {
+            globalVariables.slider2 = event.target.value;
+        });
+
+        document.getElementById('slider3').addEventListener('input', (event) => {
+            globalVariables.slider3 = event.target.value;
+        });
+
+        // Update the hiddenLayersCount when [-] or [+] buttons are clicked
+        document.getElementById('decrementHiddenLayers').addEventListener('click', () => {
+            globalVariables.hiddenLayersCount = Math.max(1, globalVariables.hiddenLayersCount - 1);
+            document.getElementById('hiddenLayersCount').textContent = globalVariables.hiddenLayersCount;
+            renderInterconnectedNodes();
+        });
+
+        document.getElementById('incrementHiddenLayers').addEventListener('click', () => {
+            if (globalVariables.hiddenLayersCount > 5){
+            return
+            }
+            globalVariables.hiddenLayersCount++;
+            document.getElementById('hiddenLayersCount').textContent = globalVariables.hiddenLayersCount;
+            renderInterconnectedNodes();
+        });
+        
+
+        function renderInterconnectedNodes() {
+            const svg = document.getElementById('nodesSvg');
+            const width = svg.width.baseVal.value;
+            const height = svg.height.baseVal.value;
+            const circleRadius = 10;
+            const totalCircles = globalVariables.hiddenLayersCount;
+            const circleSpacing = width / totalCircles; // Calculate the space between circles
+
+            svg.innerHTML = ''; // Clear previous nodes
+
+            for (let i = 0; i < totalCircles; i++) {
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                const cx = (i + 0.5) * circleSpacing; // Calculate cx to center the circles
+                const cy = height / 2; // Keep the circles vertically centered
+                circle.setAttribute('cx', cx);
+                circle.setAttribute('cy', cy);
+                circle.setAttribute('r', circleRadius);
+                circle.setAttribute('stroke', 'white');
+                circle.setAttribute('fill', 'none');
+                circle.setAttribute('stroke-width', '2');
+                svg.appendChild(circle);
+
+             if (i > 0) { // Draw lines starting from the second circle
+                    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    const x1 = (i - 0.5) * circleSpacing + circleRadius;
+                    const x2 = cx - circleRadius;
+                    line.setAttribute('x1', x1);
+                    line.setAttribute('y1', cy);
+                    line.setAttribute('x2', x2);
+                    line.setAttribute('y2', cy);
+                    line.setAttribute('stroke', 'gray');
+                    line.setAttribute('stroke-width', '2');
+                    svg.appendChild(line);
+        }
+    }
+}
+
+
+
+        // Example code for rendering a Cartesian map
+        const canvas = document.getElementById('cartesianMap');
         const ctx = canvas.getContext('2d');
 
-        let lrValue = document.getElementById('lr-value');
-        let epochsValue = document.getElementById('epochs-value');
-
-        const learningRateInput = document.getElementById('learning-rate');
-        learningRateInput.addEventListener('input', () => {
-            lrValue.textContent = learningRateInput.value;
-        });
-
-        const epochsInput = document.getElementById('epochs');
-        epochsInput.addEventListener('input', () => {
-            epochsValue.textContent = epochsInput.value;
-        });
-
-        function parseValues(inputString) {
-            return inputString.split(',').map(val => parseFloat(val.trim()));
-        }
-
-        function updatePlot() {
-            const xValuesInput = document.getElementById('x-values').value;
-            const yValuesInput = document.getElementById('y-values').value;
-
-            const xValues = parseValues(xValuesInput);
-            const yValues = parseValues(yValuesInput);
-
-            draw(xValues, yValues);
-        }
-
-        function predict(xs, w, b) {
-            return xs.mul(w).add(b);
-        }
-
-        function loss(pred, labels) {
-            return pred.sub(labels).square().mean();
-        }
-
-        async function trainModel(xs, ys) {
-            const tensorXs = tf.tensor1d(xs, 'float32');
-            const tensorYs = tf.tensor1d(ys, 'float32');
-
-            let w = tf.scalar(Math.random()).variable();
-            let b = tf.scalar(Math.random()).variable();
-
-            const optimizer = tf.train.sgd(learningRateInput.value);
-
-            for (let i = 0; i < epochsInput.value; i++) {
-                optimizer.minimize(() => {
-                    const preds = predict(tensorXs, w, b);
-                    const ls = loss(preds, tensorYs);
-                    return ls;
-                });
-
-                await tf.nextFrame();
-            }
-
-            return [w, b];
-        }
-
-        async function draw(xValues, yValues) {
-            const [w, b] = await trainModel(xValues, yValues);
-
-            const xMin = Math.min(...xValues);
-            const xMax = Math.max(...xValues);
-
-            const yMin = predict(tf.scalar(xMin), w, b).dataSync()[0];
-            const yMax = predict(tf.scalar(xMax), w, b).dataSync()[0];
-
-            const xRange = xMax - xMin;
-            const yRange = yMax - yMin;
-
-            const xPlotScale = canvas.width / xRange;
-            const yPlotScale = canvas.height / yRange;
-
+        function renderCartesianMap() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.beginPath();
 
-            ctx.moveTo((xValues[0] - xMin) * xPlotScale, canvas.height - ((yValues[0] - yMin) * yPlotScale));
-
-            for (let i = 1; i < xValues.length; i++) {
-                const x = (xValues[i] - xMin) * xPlotScale;
-                const y = canvas.height - ((yValues[i] - yMin) * yPlotScale);
-                ctx.lineTo(x, y);
-            }
-
-            ctx.strokeStyle = '#ff0000';
-            ctx.stroke();
+            // Draw points and colored areas based on global variables
+            // ...
         }
+
+        // Render the initial Cartesian map
+        renderCartesianMap();
+        renderInterconnectedNodes();
+
     </script>
 </body>
 </html>
