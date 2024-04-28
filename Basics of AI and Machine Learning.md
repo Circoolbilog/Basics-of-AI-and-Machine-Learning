@@ -59,8 +59,8 @@ The History of AI and ML dates back to the 1940's alongside the invention of ele
 ### 1. The Early Days of AI
 
 #### 1.1. The Birth of AI (1940s - 1956)
-- **1943:** Warren McCulloch and Walter Pitts proposed a model of artificial neurons.
-- **1947:** Alan Turing discussed computer intelligence and self-altering machines.
+- **1943:** Warren McCulloch and Walter Pitts proposed a model of artificial neurons. Their model described how interconnected neurons could perform complex computations, mimicking the behavior of the human brain.
+- **1947:** Alan Turing discussed computer intelligence and self-altering machines. Turing gave a public lecture in which he mentioned computer intelligence and the possibility of letting the machine alter its own instructions
 - **1950:** Claude Shannon created "Theseus," the first AI system.
 - **1956:** John McCarthy organized the Dartmouth Conference, marking the birth of AI.
 
