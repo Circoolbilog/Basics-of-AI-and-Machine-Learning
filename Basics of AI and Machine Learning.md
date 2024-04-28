@@ -41,7 +41,7 @@ Aside from GPT, there are other models like Meta's [LLAMA 3](https://ai.meta.com
 
 
 
-And those are just some examples of AI in today's world
+And those are just some examples of AI in today's world!
 # A Brief History of AI
 
 
