@@ -99,9 +99,13 @@ Machine Learning can be broadly categorized in to three main types based on the 
 Supervised learning is where models are trained on labeled datasets and are enabled to predict outputs based on the provided labeled training data. The training dataset includes the input and the expected output. The goal of supervised learning is to have a model that can corelate an input variable to an output variable and do this even with a fresh input that it has never seen before.
 Supervised learning can further be classified into two categories: 
 ### Classification
-
+Algorithms that tackles the problem of classifying objects. The output of these algorithms are categorical, some examples include Email Spam Detection, Handwritten Digit Recognition, Speech Recognition, DNA Sequence Classification and much more. 
+![classification](Classification.png)
+*(in this example the algorithm correctly classifies the blue and orange dots)*
 ### Regression
+Algorithms that predict continuous values based on input features. Examples include predicting house prices based on features like size and location, forecasting stock prices using historical data, and estimating future temperatures using weather patterns. These algorithms learn relationships between input features and the target variable to minimize the difference between predicted and actual values. 
 
+![regression](Regression.png)
 ## Unsupervised Learning
 ![unsupervised-learning.png](unsupervised-learning.png)
 
