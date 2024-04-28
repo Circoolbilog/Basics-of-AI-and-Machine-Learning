@@ -124,10 +124,40 @@ Reinforcement learning is a type of learning where the AI model learns to make d
 # Practical Examples
 ## MENACE The Matchbox who learned to play tic-tac-toe
 [Menace.pdf](Menace.pdf)
-The 1993 paper 
+The 1993 paper by Donald Michie titled "Experiments on the mechanization of game-learning," was one of the earliest implementation of machine learning, predating modern techniques like neural networks and deep learning. It could be considered simplistic by today's standards but Michie's MENACE system tackled the game of tic-tac-toe in an innovative way.
 
+MENACE, short for "Matchbox Educable Noughts And Crosses Engine," used reinforcement learning. It recorded outcomes of each game and adjusted the probability of moves based on the wins and losses gradually learning an optimal strategy without initial programming. 
 
+In a YouTube [Video](https://www.youtube.com/watch?v=R9c-_neaxeU) by Matt Parker on the [Stand-up Maths](https://www.youtube.com/@standupmaths) channel, they recreated the experiment on the Museum of Science and Industry in Manchester. Participants experienced first hand the learning process for MENACE by playing against it on tic-tac-toe by using matchboxes representing the different configurations of the board. 
+
+Despite its simplicity compared to modern methods, MENACE's trial-and-error reinforcement approach laid the foundations for understanding how machines could learn from data in a self-guided way.
 ## Neural networks
+
+You've made it this far, This part is a little bit more technical than what we have discussed so far, I will now explain how a Neural Network works.
+### Structure of a Neural Network
+A neural network consists of interconnected nodes called neurons, these neurons are organized into layers. 
+![](Neural-Networks-Architecture.png)
+1. **Input Layer**: The input layer receives raw data or features to be processed by  the neural network, Each neuron in the input layer represents a feature or attribute of the input data.
+2. **Hidden Layer**: Hidden layers are intermediate layers between the input and output layers. the y perform complex mathematical transformations to the input data extracting relevant features and patterns. A neural network can have more than one hidden layers each consisting of multiple neurons
+3. **Output Layer**: The output layer produces the final output of the neural network. It can contain one or more neurons depending on the nature of the task.
+### Components of a Neural Network:
+
+1. **Neurons:** Neurons are the basic processing units of a neural network. Each neuron receives inputs, applies a transformation (activation function), and produces an output.
+2. **Weights:** Weights represent the strength of connections between neurons. They control how much influence one neuron has on another. During training, weights are adjusted to minimize the difference between predicted and actual outputs.
+3. **Biases:** Biases provide flexibility to the neural network by shifting the activation function horizontally. They allow the neural network to learn even when all inputs are zero.
+4. **Activation Functions:** Activation functions introduce non-linearity into the neural network, enabling it to learn complex patterns. They determine the output of a neuron based on its input.
+5. **Loss Function:** The loss function measures the difference between the predicted output of the neural network and the actual output. It quantifies the network's performance and guides the training process.
+ 
+
+
 [playground](https://circoolbilog.github.io/Basics-of-AI-and-Machine-Learning/Assets/neura-networks-playground.html)
 
+
 # The Future of AI
+In conclusion, as we venture further into the realm of Artificial Intelligence (AI), it's essential to recognize both its immense potential and the ethical responsibilities that come with it. AI holds the promise of transforming industries, solving complex problems, and improving countless aspects of our lives. However, as we harness its power, we must also prioritize safety and ethics.
+
+For those interested in delving into AI, resources like the [LessWrong list of links for AI safety](https://www.lesswrong.com/posts/FkDuWGtiCTshovoTN/list-of-links-for-getting-into-ai-safety) and the [Fast.ai course](https://course.fast.ai/) provide valuable knowledge and guidance. These resources offer insights into the principles of AI safety, best practices for developing safe and robust AI systems, and practical skills for building AI solutions.
+
+Moreover, it's crucial to acknowledge the moral and ethical responsibilities inherent in pursuing a career in AI. As AI technologies continue to advance, they raise profound ethical questions about privacy, fairness, transparency, accountability, and the impact on society at large. Those entering the field have a responsibility to approach their work with integrity, empathy, and a commitment to ethical principles.
+
+By prioritizing AI safety, adhering to ethical guidelines, and actively engaging in discussions about the societal implications of AI, individuals can contribute to the responsible development and deployment of AI technologies. Together, we can harness the potential of AI to create a more equitable, inclusive, and sustainable future for all.
