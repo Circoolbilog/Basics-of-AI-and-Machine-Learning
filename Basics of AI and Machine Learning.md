@@ -88,12 +88,19 @@ The History of AI and ML dates back to the 1940's alongside the invention of ele
 **Deep Learning** - A sub type of ML that uses Neural Networks. it uses a network of Nodes called "neurons" designed after the human brain.
 
 # Types of Machine Learning
-Source: [[Vijay Kanade](https://www.spiceworks.com/user/about/vijaya-kanade "Vijay Kanade") - ](https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-ml/)
-Machine Learning can be broadly categorized in to three main types based on the approach on learning and the availability of  labeled data: 
+Source: [Vijay Kanade - Spiceworks](https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-ml/)
 
+Machine Learning algorithms are used to create a model from a training dataset. The created model uses what it "learned" from the training dataset to make a prediction on new input data. 
+![how-ml-work](How-machine-learning-work.png)
+
+Machine Learning can be broadly categorized in to three main types based on the approach on learning and the availability of  labeled data: 
 ## Supervised Learning
 ![supervised-learning](supervised-learning.png)
+Supervised learning is where models are trained on labeled datasets and are enabled to predict outputs based on the provided labeled training data. The training dataset includes the input and the expected output. The goal of supervised learning is to have a model that can corelate an input variable to an output variable and do this even with a fresh input that it has never seen before.
+Supervised learning can further be classified into two categories: 
+### Classification
 
+### Regression
 
 ## Unsupervised Learning
 ![unsupervised-learning.png](unsupervised-learning.png)
