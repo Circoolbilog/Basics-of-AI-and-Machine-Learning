@@ -146,4 +146,11 @@ discovering the relation between variables in large datasets.
 # The Future of AI
 
 ---
-! [LessWrong list of links for AI safety](https://www.lesswrong.com/posts/FkDuWGtiCTshovoTN/list-of-links-for-getting-into-ai-safety)
+For those interested in delving into AI
+https://www.lesswrong.com/posts/FkDuWGtiCTshovoTN/list-of-links-for-getting-into-ai-safety
+https://course.fast.ai/
+---
+privacy, fairness, transparency, accountability
+
+---
+Those entering the field have a responsibility to approach their work with integrity, empathy, and a commitment to ethical principles.
