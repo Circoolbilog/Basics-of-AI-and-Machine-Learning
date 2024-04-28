@@ -27,8 +27,16 @@ Here's an excellent example of computer vision right in your pocket. If you have
 While Computer Vision uses Machine Learning to help computers understand and interpret the world through digital Images, Generative AI is focused on creative endeavors. Generative AI, much like computer vision is a broad term that encompasses a variety of techniques designed to generate new content such as text, images, audio, or other types of data. Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models are examples of Generative AI. They are trained to understand and replicate underlying patterns and structures present in the training data allowing them to create "new" content that is similar but not too identical to the original data.
 
 ### Large Language Model (LLM)
+
 ![GTP-Trends](GPT-Trends.png)
 
+ChatGPT is the most popular example of Large Language models but even before the emergence of ChatGPT, the foundation for these models was laid out by the development of Generative Pre-trained Transformer by OpenAI, that's where the GPT in ChatGPT comes from. GPT, introduced in 2018 was a groundbreaking approach to Natural Language Processing (NLP).
+
+GPT works by using something called a Transformer, first breaking down the text into tiny pieces called "tokens" and then understanding the relation of each tokens to one another to build context. In essence GPT is just predicting what word comes next by analyzing what words came before and doing it over and over again to create coherent sentences. The way ChatGPT works is that there, every time you start a conversation, there are hidden messages providing ChatGPT the context that what comes next is what a helpful ai assistant would say.
+
+Aside from GPT, there are other models like Meta's [LLAMA 3](https://ai.meta.com/blog/meta-llama-3/) which released just last Apr 18, 2024, it is an open source model that you can download and use if you have a powerful enough computer. If you are interested to try it out for yourself, I personally use the [text-generation-webui](https://github.com/oobabooga/text-generation-webui) on github, and download my models on [Hugginface](https://huggingface.co/TheBloke) provided by user "The Bloke" since the model that they provide are already quantized.
+![oobabooga](https://raw.githubusercontent.com/oobabooga/screenshots/main/print_instruct.png)
+(screenshot of text-generation-webui)
 ### Diffusion Models
 
 
