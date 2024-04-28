@@ -109,10 +109,11 @@ Supervised learning can further be classified into two categories:
 ## Reinforcement Learning
 ![[Reinforcement Learning.png]]
 
-# Menace The Matchbox who learned to play tic-tac-toe
+# Practical Examples
+## Menace The Matchbox who learned to play tic-tac-toe
 
 
-# Neural networks
+## Neural networks
 
 
 # The Future of AI
