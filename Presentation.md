@@ -156,3 +156,7 @@ privacy, fairness, transparency, accountability
 
 ---
 Those entering the field have a responsibility to approach their work with integrity, empathy, and a commitment to ethical principles.
+
+---
+Everything I used in here is available on my website
+circool
