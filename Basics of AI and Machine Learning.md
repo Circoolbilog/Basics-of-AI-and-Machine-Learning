@@ -43,9 +43,9 @@ Text to Image models are generative models which gained popularity over the past
 ![ytthumbnail](YT-SD-how-it-works.png)
 There are several text to image models out there such as [Dall-e 2](https://openai.com/dall-e-2) and [Dall-e 3](https://openai.com/dall-e-3) by OpenAI, [Midjopurney](https://www.midjourney.com/home), and [Stable Diffusion](https://stability.ai/news/stable-diffusion-public-release) by Stability AI. They all use slightly different methods for generating the images but the Idea is roughly the same. I personally use Stable diffusion using  [AUTOMATIC1111's stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on github for my personal use. It allows me to train my own data and use it however I want. Here are some example images I generated back in 2023:
 
-| Anime | Realistic |
-| -------- | ---------- |
-| ![anime-clark](SD-anime-clark.bmp)  | ![sd-ninja-clark](SD-realistic-ninja-clark.bmp) |
+| Anime                              | Realistic                                       |
+| ---------------------------------- | ----------------------------------------------- |
+| ![anime-clark](SD-anime-clark.bmp) | ![sd-ninja-clark](SD-realistic-ninja-clark.bmp) |
 
 
 In these images I trained a model with my face. There is of course one thing to keep in mind if you want to go and train your own models, you need consent before you train these models. There is nothing preventing us from training models of other people's likeness so be responsible.
@@ -116,7 +116,7 @@ Unsupervised Learning Deals with unlabeled data, where the algorithm tries to fi
 ### Clustering
 Clustering is just a way of grouping similar data points together. An example of this is clustering a customers based on their purchase Behaviors.
 ### Association
-Association on the other hand is Discovering the relation between variables in large datasets. Examples include market basket analysis to find frequently co-occurring items in transactions. 
+Association on the other hand is discovering the relation between variables in large datasets. Examples include market basket analysis to find frequently co-occurring items in transactions. 
 
 ## Reinforcement Learning
 ![[Reinforcement Learning.png]]
@@ -149,8 +149,7 @@ A neural network consists of interconnected nodes called neurons, these neurons 
 5. **Loss Function:** The loss function measures the difference between the predicted output of the neural network and the actual output. It quantifies the network's performance and guides the training process.
  
 
-
-[playground](https://circoolbilog.github.io/Basics-of-AI-and-Machine-Learning/Assets/neura-networks-playground.html)
+if [playground](https://circoolbilog.github.io/Basics-of-AI-and-Machine-Learning/Assets/neura-networks-playground.html) is not yet ready, use [Tensorflow playground]([playground](https://circoolbilog.github.io/Basics-of-AI-and-Machine-Learning/Assets/neura-networks-playground.html)) instead
 
 
 # The Future of AI
@@ -161,3 +160,5 @@ For those interested in delving into AI, resources like the [LessWrong list of l
 Moreover, it's crucial to acknowledge the moral and ethical responsibilities inherent in pursuing a career in AI. As AI technologies continue to advance, they raise profound ethical questions about privacy, fairness, transparency, accountability, and the impact on society at large. Those entering the field have a responsibility to approach their work with integrity, empathy, and a commitment to ethical principles.
 
 By prioritizing AI safety, adhering to ethical guidelines, and actively engaging in discussions about the societal implications of AI, individuals can contribute to the responsible development and deployment of AI technologies. Together, we can harness the potential of AI to create a more equitable, inclusive, and sustainable future for all.
+
+Everything I used in here is available on [Github](https://github.com/Circoolbilog/Basics-of-AI-and-Machine-Learning.git)
