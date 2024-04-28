@@ -5,7 +5,7 @@ Everything I used here is available on github and on my website
 ![[chat-gpt2.png]]
 
 ---
-# Congratulations! 
+## Congratulations! 
 
 ---
 # AI in Today's World:
@@ -128,8 +128,8 @@ discovering the relation between variables in large datasets.
 ![](menace.jpg)
 
 ---
-## Neural networks
-### Structure of a Neural Network
+### Neural networks
+Structure of a Neural Network
 ![](Neural-Networks-Architecture.png)
 
 ---
@@ -138,6 +138,8 @@ discovering the relation between variables in large datasets.
 1. **Neurons:** Neurons are the basic processing units of a neural network.
 2. **Weights:** Weights represent the strength of connections between neurons. 
 3. **Biases:** Biases provide flexibility to the neural network by shifting the activation function horizontally.
+
+---
 4. **Activation Functions:** Activation functions introduce non-linearity into the neural network, enabling it to learn complex patterns. 
 5. **Loss Function:** The loss function measures the difference between the predicted output of the neural network and the actual output. 
 
