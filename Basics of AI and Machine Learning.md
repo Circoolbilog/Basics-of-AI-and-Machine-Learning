@@ -81,12 +81,16 @@ The History of AI and ML dates back to the 1940's alongside the invention of ele
 - **1997:** IBM's Deep Blue defeated Garry Kasparov in chess.
 
 # What is the Difference Between AI and Machine Learning?
+*Source: [Pathmind.com](https://wiki.pathmind.com/ai-vs-machine-learning-vs-deep-learning)*
 
-![[AI-ML_DL.png]]
+AI is the broadest term, referring to any computer program that exhibits intelligent behavior. It includes techniques like rules-based systems (symbolic AI) as well as machine learning.
+
+![AI](AI-ML_DL.png)
 **Artificial Intelligence** - The ability of a computer or computer-controlled robot to perform tasks that are commonly associated with the intellectual processes characteristics of humans.
 **Machine Learning** - Constantly improving a machine through tweaking of parameters based on experience which imitates the way humans learn. 
 **Deep Learning** - A sub type of ML that uses Neural Networks. it uses a network of Nodes called "neurons" designed after the human brain.
 
+The future of AI is uncertain, with different perspectives on whether rapid progress will continue, stagnate, or raise existential risk concerns. Combining deep learning with other AI techniques like symbolic reasoning shows promise.
 # Types of Machine Learning
 Source: [Vijay Kanade - Spiceworks](https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-ml/)
 
@@ -108,16 +112,22 @@ Algorithms that predict continuous values based on input features. Examples incl
 ![regression](Regression.png)
 ## Unsupervised Learning
 ![unsupervised-learning.png](unsupervised-learning.png)
-
+Unsupervised Learning Deals with unlabeled data, where the algorithm tries to find patterns or structures in the input data without explicit supervision. Some applications include  customer segmentation, anomaly detection, recommendation systems(like tiktok), and data comression. Unsupervised Learning can also be further classified into two main types:
+### Clustering
+Clustering is just a way of grouping similar data points together. An example of this is clustering a customers based on their purchase Behaviors.
+### Association
+Association on the other hand is Discovering the relation between variables in large datasets. Examples include market basket analysis to find frequently co-occurring items in transactions. 
 
 ## Reinforcement Learning
 ![[Reinforcement Learning.png]]
-
+Reinforcement learning is a type of learning where the AI model learns to make decisions by interacting with an environment. It learns through trial and error, receiving feedback in forms of rewards or punishments. Some examples include, Robotics(Robots train to perform tasks like walking or grabbing objects), [Playing Games (AI models trained how to play games)](https://www.youtube.com/watch?v=ovIykchkW5I), and Autonomous Driving.
 # Practical Examples
-## Menace The Matchbox who learned to play tic-tac-toe
+## MENACE The Matchbox who learned to play tic-tac-toe
+[Menace.pdf](Menace.pdf)
+The 1993 paper 
 
 
 ## Neural networks
-
+[playground](https://circoolbilog.github.io/Basics-of-AI-and-Machine-Learning/Assets/neura-networks-playground.html)
 
 # The Future of AI
