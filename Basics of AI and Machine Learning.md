@@ -37,9 +37,9 @@ GPT works by using something called a Transformer, first breaking down the text 
 Aside from GPT, there are other models like Meta's [LLAMA 3](https://ai.meta.com/blog/meta-llama-3/) which released just last Apr 18, 2024, it is an open source model that you can download and use if you have a powerful enough computer. If you are interested to try it out for yourself, I personally use the [text-generation-webui](https://github.com/oobabooga/text-generation-webui) on github, and download my models on [Hugginface](https://huggingface.co/TheBloke) provided by user "The Bloke" since the model that they provide are already quantized.
 ![oobabooga](https://raw.githubusercontent.com/oobabooga/screenshots/main/print_instruct.png)
 (screenshot of text-generation-webui)
-### Diffusion Models
-
-
+### Text to Image
+Text to Image models are generative models which gained popularity over the past several years. They work by "destroying" an image by gradually adding gaussian noise to an image and learning to reverse this process. That's not all though, there is also embeddings added to these images. If you want to learn more go to the Computerf
+![ytthumbnail](YT-SD-how-it-works.png)
 
 And those are just some examples of AI in today's world!
 # A Brief History of AI
