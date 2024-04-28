@@ -1,8 +1,9 @@
+# Basics of AI and Machine Learning
 "Welcome to our journey through the realms of artificial intelligence (AI) and machine learning. In today's interconnected world, AI is omnipresent, revolutionizing industries and reshaping our daily lives. From personalized recommendations to autonomous vehicles, its impact is undeniable. As we embark on this exploration, we'll delve into the history of AI, distinguish between AI and machine learning, and navigate through the diverse landscapes of supervised, unsupervised, and reinforcement learning. Join us as we unravel the mysteries and possibilities of AI and machine learning."
 
 I figured most of you would notice, but that introduction was written by ChatGPT
 ![chatgpt](chat-gpt2.png)
-If you noticed, Congratulations! You most likely have used ChatGPT or similar tools. --
+If you noticed, Congratulations! You most likely have used ChatGPT or similar tools. 
 
 Since we're talking about AI today I thought it fitting to introduce everyone to this topic. I want to first talk about the use of AI in today's World.
 
@@ -38,12 +39,46 @@ Aside from GPT, there are other models like Meta's [LLAMA 3](https://ai.meta.com
 ![oobabooga](https://raw.githubusercontent.com/oobabooga/screenshots/main/print_instruct.png)
 (screenshot of text-generation-webui)
 ### Text to Image
-Text to Image models are generative models which gained popularity over the past several years. They work by "destroying" an image by gradually adding gaussian noise to an image and learning to reverse this process. That's not all though, there is also embeddings added to these images. If you want to learn more go to the Computerf
+Text to Image models are generative models which gained popularity over the past several years. They work by "destroying" an image by gradually adding gaussian noise to an image and learning to reverse this process. That's not all though, there is also embeddings added to these images. If you want to learn more go to the [Computerphile channel on youtube](https://www.youtube.com/watch?v=1CIpzeNxIhU&t=939s) for an easy to understand explanation. 
 ![ytthumbnail](YT-SD-how-it-works.png)
+There are several text to image models out there such as [Dall-e 2](https://openai.com/dall-e-2) and [Dall-e 3](https://openai.com/dall-e-3) by OpenAI, [Midjopurney](https://www.midjourney.com/home), and [Stable Diffusion](https://stability.ai/news/stable-diffusion-public-release) by Stability AI. They all use slightly different methods for generating the images but the Idea is roughly the same. I personally use Stable diffusion using  [AUTOMATIC1111's stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on github for my personal use. It allows me to train my own data and use it however I want. Here are some example images I generated back in 2023:
 
-And those are just some examples of AI in today's world!
+| Anime | Realistic |
+| -------- | ---------- |
+| ![anime-clark](SD-anime-clark.bmp)  | ![sd-ninja-clark](SD-realistic-ninja-clark.bmp) |
+
+
+In these images I trained a model with my face. There is of course one thing to keep in mind if you want to go and train your own models, you need consent before you train these models. There is nothing preventing us from training models of other people's likeness so be responsible.
+
+
+And those are just some examples of AI in today's world! Now that we're caught up on How AI is used today, let's explore now the history of AI, Specifically Machine Learning.
 # A Brief History of AI
 
+The History of AI and ML dates back to the 1940's alongside the invention of electronic computers. Here's a condensed timeline from an article written by [Dan Franklin](https://www.linkedin.com/pulse/brief-history-ai-ml-dan-franklin/)
+
+### 1. The Early Days of AI
+
+#### 1.1. The Birth of AI (1940s - 1956)
+- **1943:** Warren McCulloch and Walter Pitts proposed a model of artificial neurons.
+- **1947:** Alan Turing discussed computer intelligence and self-altering machines.
+- **1950:** Claude Shannon created "Theseus," the first AI system.
+- **1956:** John McCarthy organized the Dartmouth Conference, marking the birth of AI.
+
+### 2. The Emergence of Machine Learning
+
+#### 1.2. The Rise of Machine Learning (Late 1950s - 1959)
+- **Late 1950s:** Arthur Samuel introduced the term "Machine Learning."
+- **1958:** FORTRAN, the first programming language for scientific computing, was introduced.
+- **1959:** John McCarthy proposed using LISP for AI research.
+
+### 3. The Evolution of AI and ML
+
+#### 1.3. Progress in AI and ML (1960s - 1990s)
+- **1967:** General Problem Solver (GPS) was developed.
+- **1970:** The first computer vision system was created.
+- **Late 1970s:** Emergence of connectionism.
+- **1980s:** Introduction of the backpropagation algorithm.
+- **1997:** IBM's Deep Blue defeated Garry Kasparov in chess.
 
 # What is the Difference Between AI and Machine Learning?
 
