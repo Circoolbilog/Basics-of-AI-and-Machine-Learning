@@ -67,17 +67,17 @@ The History of AI and ML dates back to the 1940's alongside the invention of ele
 ### 2. The Emergence of Machine Learning
 
 #### 1.2. The Rise of Machine Learning (Late 1950s - 1959)
-- **Late 1950s:** Arthur Samuel introduced the term "Machine Learning."
-- **1958:** FORTRAN, the first programming language for scientific computing, was introduced.
-- **1959:** John McCarthy proposed using LISP for AI research.
+- **Late 1950s:** Arthur Samuel introduced the term "Machine Learning" to describe a field of study that gives computers the ability to learn without being explicitly programmed.
+- **1958:** FORTRAN, the first programming language for scientific computing, was introduced.This allowed researchers to write algorithms that could perform complex calculations and process large amounts of data.
+- **1959:** John McCarthy and Marvin Minsky founded the MIT Artificial Intelligence Project, which focused on developing new AI and ML algorithms. That same year, McCarthy also proposed the idea of using LISP, the first AI programming language, for AI research.
 
 ### 3. The Evolution of AI and ML
 
 #### 1.3. Progress in AI and ML (1960s - 1990s)
 - **1967:** General Problem Solver (GPS) was developed.
-- **1970:** The first computer vision system was created.
-- **Late 1970s:** Emergence of connectionism.
-- **1980s:** Introduction of the backpropagation algorithm.
+- **1970:** The first computer vision system was created, which could recognize handwritten digits
+- **Late 1970s:** Emergence of connectionism which focused on creating neural networks that could learn from data.
+- **1980s:** Introduction of the backpropagation algorithm. 
 - **1997:** IBM's Deep Blue defeated Garry Kasparov in chess.
 
 # What is the Difference Between AI and Machine Learning?
@@ -88,13 +88,19 @@ The History of AI and ML dates back to the 1940's alongside the invention of ele
 **Deep Learning** - A sub type of ML that uses Neural Networks. it uses a network of Nodes called "neurons" designed after the human brain.
 
 # Types of Machine Learning
+Source: [[Vijay Kanade](https://www.spiceworks.com/user/about/vijaya-kanade "Vijay Kanade") - ](https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-ml/)
+Machine Learning can be broadly categorized in to three main types based on the approach on learning and the availability of  labeled data: 
 
 ## Supervised Learning
+![supervised-learning](supervised-learning.png)
+
 
 ## Unsupervised Learning
+![unsupervised-learning.png](unsupervised-learning.png)
+
 
 ## Reinforcement Learning
-
+![[Reinforcement Learning.png]]
 
 # Menace The Matchbox who learned to play tic-tac-toe
 
