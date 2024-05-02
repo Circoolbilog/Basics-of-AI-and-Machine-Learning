@@ -47,30 +47,27 @@ Everything is AI enabled
 # A Brief History of AI
 
 ---
-### 1. The Early Days of AI
-#### 1.1. The Birth of AI (1940s - 1956)
-- **1943:** Warren McCulloch and Walter Pitts proposed a model of artificial neurons. 
-- **1947:** Alan Turing discussed computer intelligence and self-altering machines. 
-- **1950:** Claude Shannon created "Theseus," the first AI system.
-- **1956:** John McCarthy organized the Dartmouth Conference, marking the birth of AI.
+```mermaid
+%%{init: {'theme': 'dark'}}%%
+timeline
+    title Timeline of AI and ML Development
+    section The Birth of AI
+        1940s: McCulloch and Pitts proposed model of artificial neurons
+            : Alan Turing discussed computer intelligence
+        1950s: Claude Shannon created "Theseus"
+            : John McCarthy organized the Dartmouth Conference
+    section The Emergence of Machine Learning
+        Late 1950s: Arthur Samuel introduced "Machine Learning"
+            : Introduction of FORTRAN
+            : McCarthy and Minsky founded the MIT AI Project
+    section The Evolution of AI and ML
+        1967: Development of General Problem Solver (GPS)
+        1970s: First computer vision system created
+            : Emergence of connectionism
+        1980s: Introduction of backpropagation algorithm
+        1997: IBM's Deep Blue defeated Garry Kasparov
 
----
-### 2. The Emergence of Machine Learning
-
-#### 1.2. The Rise of Machine Learning (Late 1950s - 1959)
-- **Late 1950s:** Arthur Samuel introduced the term "Machine Learning" 
-- **1958:** FORTRAN, the first programming language for scientific computing
-- **1959:** John McCarthy and Marvin Minsky founded the MIT Artificial Intelligence Project
-
----
-### 3. The Evolution of AI and ML
-
-#### 1.3. Progress in AI and ML (1960s - 1990s)
-- **1967:** General Problem Solver (GPS) was developed.
-- **1970:** The first computer vision system was created
-- **Late 1970s:** Emergence of connectionism
-- **1980s:** Introduction of the backpropagation algorithm. 
-- **1997:** IBM's Deep Blue defeated Garry Kasparov in chess.
+```
 
 ---
 
