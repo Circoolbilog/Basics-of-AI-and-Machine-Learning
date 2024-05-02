@@ -1,25 +1,24 @@
 ---
-
 title: "Artificial Intelligence Deconstructed: Understanding the Concepts of AI, ML, and DL."
-
 date: 2024-04-27 8:00:00 +800
-
-categories: [AI, Machine Learning, Talks]
-
-tags: [AI, Machine Learning, Talks, Webinar, CSPC, ICPEP]
-
+categories:
+  - AI
+  - Machine Learning
+  - Talks
+tags:
+  - AI
+  - Machine
+  - Learning
+  - Talks
+  - Webinar
+  - CSPC
+  - ICPEP
 author: clark
-
 description: All you need to know to get started with AI
-
 pin: true
-
 math: true
-
 mermaid: true
-
 comments: true
-
 ---
 
 # Artificial Intelligence Deconstructed: Understanding the Concepts of AI, ML, and DL.
