@@ -1,5 +1,5 @@
-# Basics of AI and Machine Learning
-Everything I used here is available on github and on my website
+# Understanding the Concepts of AI, ML, and DL.
+Everything I used in this presentation is available on github and on my website
 
 ---
 ![[chat-gpt2.png]]
@@ -24,11 +24,17 @@ Everything is AI enabled
 - Optical Character Recognition
 ---
 # Generative AI
+![[Pasted image 20240502222619.png]]
 
 ---
 ### Large Language Model (LLM)
 
 ![GTP-Trends](GPT-Trends.png)
+
+---
+# OpenSource LLM
+![[hf-logo-with-title.png]]
+https://huggingface.co/models
 
 ---
 ### Text Generation Webui
@@ -44,6 +50,11 @@ Everything is AI enabled
 | ![anime-clark](SD-anime-clark.bmp) | ![sd-ninja-clark](SD-realistic-ninja-clark.bmp) |
 
 ---
+
+### AUTOMATIC1111's stable diffusion webui
+![](https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/screenshot.png)
+
+----
 # A Brief History of AI
 
 ---
@@ -87,18 +98,22 @@ Source: [Vijay Kanade - Spiceworks](https://www.spiceworks.com/tech/artificial-i
 ---
 ## Supervised Learning
 ![supervised-learning](supervised-learning.png)
+trained on labeled datasets
 
 ---
 ### Classification
 ![classification](Classification.png)
+classifying objects
 
 ---
 ### Regression
 ![regression](Regression.png)
+used to predict continuous values
 
 ---
 ## Unsupervised Learning
 ![unsupervised-learning.png](unsupervised-learning.png)
+Deals with unlabeled data
 
 ---
 ### Clustering
@@ -112,6 +127,7 @@ discovering the relation between variables in large datasets.
 
 ## Reinforcement Learning
 ![[Reinforcement Learning.png]]
+through trial and error
 
 
 ---
@@ -141,6 +157,11 @@ Structure of a Neural Network
 5. **Loss Function:** The loss function measures the difference between the predicted output of the neural network and the actual output. 
 
  ---
+
+### https://playground.tensorflow.org/
+DEMO
+
+---
 
 # The Future of AI
 
